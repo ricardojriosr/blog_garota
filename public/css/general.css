@@ -1,0 +1,197 @@
+body,html {
+    overflow-x: hidden;
+}
+.img-to-edit {
+    height: 250px !important;
+    display: inline-block !important;
+    margin-right: 1% !important;
+    margin-top: 1% !important;
+}
+.logo-header-img {
+    width: 100%;
+}
+.tests {
+    border: 1px solid red;
+}
+.HeaderLink {
+    color: white !important;
+}
+.HeaderLink:hover {
+    color: lightgray !important;
+}
+.logo-admin {
+    height: 40px;
+    margin-top: -10px;
+    border: 1px solid lightgray;
+}
+#srch-term{
+    background-color: #222222 !important;
+    color: white !important;
+    border-left: 1px solid white !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+}
+#SearchInput {
+    background-color: #222222 !important;
+    color: white !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: 1px solid white !important;
+}
+#carousel-example {
+    margin-top: -20px;
+}
+.img-banner {
+    height: 100% !important;
+    width: 100% !important;
+}
+h4.banner {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+h3.banner {
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+p.banner {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: initial;
+}
+.mini-banner {
+    height: 120px !important;
+}
+.img-mini-banner {
+    height: 120px !important;
+    width: auto !important;
+    opacity: 0.5;
+}
+.cat-mini-banner {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: smaller;
+    color: darkgray;
+    margin-top: 1px !important;
+}
+.tit-mini-banner {
+    margin-top: -7px !important;
+    text-transform: uppercase;
+    font-size: medium;
+    color: gray;
+    font-style: italic;
+}
+.mini-banner-activo img {
+    opacity: 1 !important;
+}
+.mini-banner-activo h5,
+.mini-banner-activo h3 {
+    color: black !important;
+}
+.img-entradaA {
+    width: 100% !important;
+}
+.entradaA {
+    margin-left: 0 !important;
+    left: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    right: 0 !important;
+    padding-right: 0 !important;
+}
+.entradas-1 {
+    margin-left: 0 !important;
+    left: 0 !important;
+    padding-left: 0 !important;
+}
+.banner-gris {
+    background-color: lightgray !important;
+    margin-right: 0 !important;
+    right: 0 !important;
+    padding-right: 0 !important;
+    height: 350px;
+    border-left: 20px solid white;
+}
+.xparent {
+    height: 350px;
+}
+.h5entradaa,
+.h3entradaa{
+    text-transform: uppercase;
+    color: black;
+    margin-top: 0;
+    top: 0;
+    padding: 0;
+}
+.h5entradaa:hover,
+.h3entradaa:hover {
+    color: black;
+}
+.h3entradaa {
+    font-style: italic;
+    font-weight: bold;
+}
+.h5entradaa {
+    font-weight: bolder;
+}
+.pentradaa {
+    text-transform: uppercase;
+    color: gray;
+}
+.pentradaa:hover {
+    color: gray;
+}
+.h3entradaa2, .pentradaa2 {
+    margin-top: 0 !important;
+    top: 0 !important;
+    padding-top: 0 !important;
+}
+.sin-bordes {
+    border-radius: 0 !important;
+}
+.img-parallax {
+    width: 100% !important;
+    height: 300px !important;
+
+}
+.info-parallax {
+    height: 120px;
+    color: white;
+    margin-right: 5%;
+    border-bottom: 2px solid white !important;
+}
+.info-parallax:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+.div-parallax {
+    width: 100% !important;
+}
+.bordes-productos {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.producto-destacado {
+    background-color: white;
+    width: 40%;
+    margin: 0 auto 0 auto;
+    margin-top: -15px !important;
+}
+.hr_parallax {
+    border: 2px solid white;
+}
+.p_parallax,
+.p_parallax:hover,
+.h5_parallax,
+.h5_parallax:hover,
+.h3_parallax,
+.h3_parallax:hover {
+    color: white;
+    text-decoration: none;
+}
