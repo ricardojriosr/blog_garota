@@ -24,7 +24,7 @@
     @yield('content')
 
     <footer>
-
+        @include('front.template.partials.footer')
     </footer>
 
     <script
@@ -32,6 +32,8 @@
             integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
             crossorigin="anonymous"></script>
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('plugins/jcarousel/jquery.jcarousel.min.js') }}"></script>
+    <script src="{{ asset('plugins/instafeed/instafeed.min.js') }}"></script>
     @yield('js')
 </body>
 </html>

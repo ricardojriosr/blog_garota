@@ -1,6 +1,15 @@
 body,html {
     overflow-x: hidden;
 }
+.tests {
+    border: 1px solid red;
+}
+.tests2 {
+    border: 1px solid yellow;
+}
+.tests3 {
+    border: 1px solid green;
+}
 .img-to-edit {
     height: 250px !important;
     display: inline-block !important;
@@ -9,9 +18,6 @@ body,html {
 }
 .logo-header-img {
     width: 100%;
-}
-.tests {
-    border: 1px solid red;
 }
 .HeaderLink {
     color: white !important;
@@ -181,7 +187,9 @@ p.banner {
     background-color: white;
     width: 40%;
     margin: 0 auto 0 auto;
-    margin-top: -15px !important;
+    margin-top: -30px !important;
+    font-size: large;
+    font-style: italic;
 }
 .hr_parallax {
     border: 2px solid white;
@@ -195,3 +203,192 @@ p.banner {
     color: white;
     text-decoration: none;
 }
+.image_prlx {
+    position: relative;
+    width: 100%; /* for IE 6 */
+}
+.h2_parallax {
+    position: absolute;
+    top: 50px;
+    right: 20% !important;
+    text-align: right;
+    width: 30%;
+    border-bottom: 2px solid white;
+}
+.p_parallax p {
+    font-size: smaller;
+}
+.h2_parallax h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+.h3_parallax h3 {
+    color: black !important;
+    font-style: italic !important;
+    font-size: 40px !important;
+}
+
+.producto1,
+.producto1:hover {
+    font-style: italic;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.producto2,
+.producto2:hover {
+    font-size: small;
+    color: lightgray;
+}
+
+/*
+JCarousel CSS
+*/
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+    width: 200px;
+}
+.jcarousel li div {
+    width: 100%;
+}
+.img-producto {
+    width: 100%;
+}
+.boton-carrusel {
+    height: 50px !important;
+}
+.flota-izquierda {
+    text-align: left;
+    margin-top: 100px;
+}
+.flota-derecha {
+    text-align: right !important;
+    margin-top: 100px;
+}
+.producto1,
+.producto2 {
+    text-align: left;
+}
+.c_prev {
+    float: right;
+}
+.c_next {
+    float: left;
+}
+/* Fin Jcarrousel */
+
+/* Entradas B */
+
+.img-entradab {
+    height: 250px;
+    width: auto;
+}
+.margen-cero {
+    margin-top: 0 !important;
+}
+
+/* Fin Entradas B */
+
+/* Footer */
+
+.footer1 {
+    border-top: 3px solid black;
+    text-align: center;
+}
+.footer-title {
+    background-color: white;
+    width: 40%;
+    margin-top: -17px !important;
+    margin: 0 auto 0 auto;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.follow-instagram {
+    background-color: lightgray;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+}
+div.vertical-line{
+    padding-top: 15px;
+    width: 18%;
+}
+div.vertical-line hr {
+    color: black;
+    border: 1px solid black;
+}
+.final-footer {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    height: 160px;
+}
+.logo-footer {
+    text-align: right;
+    font-size: xx-large;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.copy-right {
+    font-size: x-small;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative !important;
+    height: 100% !important;
+}
+span.copy-right-span {
+    position: absolute !important;
+    bottom: 0 !important;
+}
+.listado,
+.listado a,
+.listado a:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+.borde-izquierdo {
+    border-left: 2px solid white;
+}
+/* Fin Footer */

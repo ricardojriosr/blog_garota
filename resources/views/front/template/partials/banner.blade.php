@@ -86,25 +86,3 @@
     <div class="col-sm-2"></div>
 </div>
 <br>
-@section('js')
-    <script>
-        $(function () {
-            var elem = 0;
-            $('#carousel-example').bind('slide.bs.carousel', function (e) {
-                var cantidad = $(".mini-banner").length;
-                console.log(cantidad);
-                for (i =0; i < cantidad; i++) {
-                    $("#banner_" + i).removeClass("mini-banner-activo");
-                }
-                elem++;
-                if (elem == cantidad) {
-                    elem = 0;
-                    $("#banner_" + elem ).addClass("mini-banner-activo");
-                } else {
-                    $("#banner_" + elem ).addClass("mini-banner-activo");
-                }
-                console.log(elem);
-            });
-        });
-    </script>
-@endsection

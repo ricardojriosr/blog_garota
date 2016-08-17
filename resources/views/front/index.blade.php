@@ -13,59 +13,109 @@
 <?php
 if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontController@index') {
 ?>
+
 @include('front.template.partials.banner')
-<?php
-}
-?>
 
-<div class="container">
-    <br><br>
-    <div class="row text-center">
+@include('front.template.partials.entradasa')
 
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 entradas-1 ">
-
-            <div class="row xparent">
-                @foreach($entradaA as $a1)
-                <div class="col-sm-9 entradaA">
-                    @foreach($a1->images as $image)
-                        @if ($image->default == 1)
-                        <a href="{{ route('front.view.article',$a1->slug)  }}"><img src="{{ asset('images/articles/' . $image->name  ) }}" alt="{{$a1->title}}" class="img-responsive img-entradaA"></a>
-                        @endif
-                            <br>
-                        <a href="{{route('front.search.category', $a1->category->name)}}"><h5 class="text-left h5entradaa">{{$a1->category->name}}</h5></a>
-                        <a href="{{ route('front.view.article',$a1->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2">{{$a1->title}}</h3></a>
-                        <a href="{{ route('front.view.article',$a1->slug)  }}" class="pentradaa"><p class="text-left pentradaa2">{{$a1->subtitle}}</p></a>
-                    @endforeach
-                </div>
-                @endforeach
-                <div class="col-sm-3 banner-gris">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2"></div>
-
-    </div>
-
-
-</div>
-<br><br>
-<?php
-if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontController@index') {
-?>
 @include('front.template.partials.parallax')
+
+@include('front.template.partials.products')
+
+@include('front.template.partials.entradasb')
+
 <?php
 }
 ?>
-<br><br>
-<div class="container">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 bordes-productos text-center">
-        <div class="producto-destacado"><strong>PRODUCTOS DESTACADOS</strong></div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
-<br>
+
 
 @endsection
 
+@section('js')
+    <script type="text/javascript">
+
+        $(function () {
+            var feed = new Instafeed({
+                clientId: '0b32df656196458db33a437a109f7b08'
+            });
+            feed.run();
+        });
+
+        $(function () {
+            var elem = 0;
+            $('#carousel-example').bind('slide.bs.carousel', function (e) {
+                var cantidad = $(".mini-banner").length;
+
+                for (i =0; i < cantidad; i++) {
+                    $("#banner_" + i).removeClass("mini-banner-activo");
+                }
+                elem++;
+                if (elem == cantidad) {
+                    elem = 0;
+                    $("#banner_" + elem ).addClass("mini-banner-activo");
+                } else {
+                    $("#banner_" + elem ).addClass("mini-banner-activo");
+                }
+
+            });
+        });
+
+
+        (function($) {
+            $(function() {
+                /*
+                 Carousel initialization
+                 */
+                $('.jcarousel')
+                        .jcarousel({
+                            // Options go here
+                        });
+
+                /*
+                 Prev control initialization
+                 */
+                $('.jcarousel-control-prev')
+                        .on('jcarouselcontrol:active', function() {
+                            $(this).removeClass('inactive');
+                        })
+                        .on('jcarouselcontrol:inactive', function() {
+                            $(this).addClass('inactive');
+                        })
+                        .jcarouselControl({
+                            // Options go here
+                            target: '-=1'
+                        });
+
+                /*
+                 Next control initialization
+                 */
+                $('.jcarousel-control-next')
+                        .on('jcarouselcontrol:active', function() {
+                            $(this).removeClass('inactive');
+                        })
+                        .on('jcarouselcontrol:inactive', function() {
+                            $(this).addClass('inactive');
+                        })
+                        .jcarouselControl({
+                            // Options go here
+                            target: '+=1'
+                        });
+
+                /*
+                 Pagination initialization
+                 */
+                $('.jcarousel-pagination')
+                        .on('jcarouselpagination:active', 'a', function() {
+                            $(this).addClass('active');
+                        })
+                        .on('jcarouselpagination:inactive', 'a', function() {
+                            $(this).removeClass('active');
+                        })
+                        .jcarouselPagination({
+                            // Options go here
+                        });
+            });
+        })(jQuery);
+
+    </script>
+@endsection

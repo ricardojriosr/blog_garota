@@ -37,15 +37,29 @@ class FrontController extends Controller
                 $entradaA->category;
             });
         }
+        $entradaB = Article::where('entradaB','=','1')->get();
+        if (!$entradaB->isEmpty()) {
+            $entradaB->each(function($entradaB) {
+                $entradaB->images;
+                $entradaB->category;
+            });
+        }
         $parallax = Article::where('destacado','=',1)->get();
         $parallax->each(function($parallax){
             $parallax->images;
+        });
+        $cat_prod = Category::where('name','=','PRODUCT')->first()->id;
+        $productos = Article::where('category_id','=',$cat_prod)->orderBy('id','DESC')->get();
+        $productos->each(function($productos) {
+            $productos->images;
         });
         return view('front.index')
             ->with('articles', $articles)
             ->with('banners', $banners)
             ->with('entradaA', $entradaA)
-            ->with('parallax', $parallax);
+            ->with('entradaB', $entradaB)
+            ->with('parallax', $parallax)
+            ->with('productos', $productos);
     }
 
     public function searchCategory($name)
