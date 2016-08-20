@@ -32,7 +32,21 @@
                             @endif
                         @endforeach
                         <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto1"><h5>{{ $producto->title }}</h5></a>
-                        <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2"><h6><?php echo substr($producto->subtitle,0,75).'...' ?></h6></a>
+                        <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2"><h6>
+                                <?php
+                                $conf = 75;
+                                $string = $producto->subtitle;
+                                $largo = strlen($string);
+                                if ($largo > $conf)
+                                {
+                                    echo substr($string,0,$conf).'...';
+                                }
+                                else
+                                {
+                                    echo $string;
+                                }
+                                ?>
+                            </h6></a>
                         </div>
                     </li>
                 @endforeach

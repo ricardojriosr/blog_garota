@@ -36,22 +36,22 @@
         <div class="collapse navbar-collapse text-center">
             <ul class="nav navbar-nav text-center">
                 <li><a href="{{ Route('front.index') }}" class="HeaderLink">HOME</a></li>
-                <li><a href="#" class="HeaderLink">INSPIRATION</a></li>
-                <li><a href="#" class="HeaderLink">LIFESTYLE</a></li>
-                <li><a href="#" class="HeaderLink">FASHION</a></li>
+                <li><a href="{{route('front.search.category', 'INSPIRATION')}}" class="HeaderLink">INSPIRATION</a></li>
+                <li><a href="{{route('front.search.category', 'LIFESTYLE')}}" class="HeaderLink">LIFESTYLE</a></li>
+                <li><a href="{{route('front.search.category', 'FASHION')}}" class="HeaderLink">FASHION</a></li>
                 <li><a href="#" class="HeaderLink">ABOUT</a></li>
                 <li><a href="#" class="HeaderLink">CONTACT</a></li>
             </ul>
 
             <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search">
+                {!! Form::open(['route' => 'front.index', 'method' => 'GET', 'class' => 'navbar-form','role' => 'search']) !!}
                     <div class="input-group">
                         <div class="input-group-btn">
                             <button class="btn btn-default" type="submit" id="SearchInput"><i class="glyphicon glyphicon-search" id="SearchIcon"></i></button>
                         </div>
-                        <input type="text" class="form-control" placeholder="SEARCH" name="srch-term" id="srch-term">
+                        <input type="text" class="form-control" placeholder="SEARCH" name="srch_term" id="srch_term">
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
 
 
@@ -60,3 +60,17 @@
 
     </div>
 </div>
+@section('js')
+
+    <script type="text/javascript">
+
+        $('#srch_term').keydown(function(event) {
+            if (event.keyCode == 13) {
+                this.form.submit();
+                return false;
+            }
+        });
+
+    </script>
+
+@endsection

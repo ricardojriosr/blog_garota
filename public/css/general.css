@@ -30,7 +30,7 @@ body,html {
     margin-top: -10px;
     border: 1px solid lightgray;
 }
-#srch-term{
+#srch_term{
     background-color: #222222 !important;
     color: white !important;
     border-left: 1px solid white !important;
@@ -392,3 +392,173 @@ span.copy-right-span {
     border-left: 2px solid white;
 }
 /* Fin Footer */
+
+/* Articulos */
+.primera-parte {
+    background-color: lightgray;
+    padding: 4%;
+}
+.primer-div-articulo {
+    margin-top: -20px;
+}
+.segundo-div-articulo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: small;
+}
+.img-article {
+    width: 48%;
+    float: left;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.primera-parte h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+}
+.primera-parte h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.primera-parte p {
+    font-style: italic;
+    color: gray;
+}
+/* Fin Articulos */
+
+/* Lista por Categoria */
+
+.container-category2 {
+    background-color: lightgray;
+    text-align: center;
+}
+.container-category2 img {
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+.container-category2 p {
+    padding: 3%;
+    font-style: italic;
+}
+.container-category {
+    margin-bottom: 2%;
+}
+.container-category p {
+    color: gray;
+}
+.container-category h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container-category h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-style: italic;
+}
+.hr-title {
+    color: black;
+    background-color: black;
+    height: 3px;
+    margin-top: 25%;
+}
+.read-more a {
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-weight: bold;
+    color: black;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+/* Fin Lista por Categoria */
+
+/* Paginacion */
+ul.pagination > li:first-child > a,
+ul.pagination > li:last-child > a{
+    background-color: white;
+    color: darkgray;
+}
+ul.pagination li span {
+    margin-right: 5px;
+}
+ul.pagination .disabled {
+    display: none;
+}
+ul.pagination li.active span {
+    background-color: black;
+    color: white;
+}
+ul.pagination a {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    margin-right: 5px;
+}
+ul.pagination span {
+    background-color: lightgray;
+    color: black;
+    border: none;
+}
+/* Fin Paginacion */
+
+/* Busqueda */
+.search-container {
+    background-color: lightgray;
+    height: 340px;
+    margin-bottom: 20px !important;
+    position: relative;
+}
+.search-container img {
+    width: 100%;
+}
+.search-container .subtitle {
+    margin-top: 0 !important;
+    font-size: x-small;
+    color: gray;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.search-container h3,
+.search-container h5 {
+    text-align: left;
+    margin-top: 0 !important;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-transform: uppercase;
+}
+.search-container h5 {
+    font-weight: bold;
+    font-size: x-small;
+    margin-top: 5% !important;
+}
+.search-container p.posicion-abajo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+.search-container h3 {
+    font-weight: bold;
+    font-size: small;
+    font-style: italic;
+}
+.palabras {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    font-weight: bold;
+}
+.search-title {
+    margin-left: -2% !important;
+    margin-top: 4%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+/* Fin de Busqueda */
+

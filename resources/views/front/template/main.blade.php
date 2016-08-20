@@ -13,8 +13,10 @@
     <title>@yield('title', 'BLOG') | Carolina Silva</title>
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/journal/bootstrap.css') }}" >
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="{{ asset('css/general.css') }}" >
     <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('plugins/image-gallery/css/bootstrap-image-gallery.min.css') }}" >
 </head>
 <body>
     <header>
@@ -34,6 +36,8 @@
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
     <script src="{{ asset('plugins/jcarousel/jquery.jcarousel.min.js') }}"></script>
     <script src="{{ asset('plugins/instafeed/instafeed.min.js') }}"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="{{ asset('plugins/image-gallery/js/bootstrap-image-gallery.min.js') }}"></script>
     @yield('js')
 </body>
 </html>

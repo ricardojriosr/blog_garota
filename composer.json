@@ -11,7 +11,8 @@
         "cviebrock/eloquent-sluggable": "4.0",
         "easy-slug/easy-slug": "2.0.*",
         "laracasts/flash": "^2.0",
-        "nesbot/carbon": "^1.21"
+        "nesbot/carbon": "^1.21",
+        "jeroen-g/laravel-photo-gallery": "1.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

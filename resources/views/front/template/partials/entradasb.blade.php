@@ -14,7 +14,9 @@
         <div class="col-sm-6">
             @foreach($eb->images as $img)
                 @if ($img->default == 1)
-                    <img src="{{ asset('images/articles/' . $img->name  ) }}" alt="{{ $eb->title }}" class="img-responsive img-entradab">
+                    <a href="{{ route('front.view.article',$eb->slug)  }}">
+                        <img src="{{ asset('images/articles/' . $img->name  ) }}" alt="{{ $eb->title }}" class="img-responsive img-entradab">
+                    </a>
                 @endif
             @endforeach
             <a href="{{route('front.search.category', $eb->category->name)}}"><h5 class="text-left h5entradaa margen-cero">{{$eb->category->name}}</h5></a>

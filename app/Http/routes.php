@@ -32,6 +32,11 @@ Route::get('tags/{name}',[
     'as'    => 'front.search.tag'
 ]);
 
+Route::get('articles/{name}',[
+    'uses'  => 'FrontController@searchArticles',
+    'as'    => 'articles.search'
+]);
+
 Route::get('articles/{slug}',[
     'uses'  => 'FrontController@ViewArticle',
     'as'    => 'front.view.article'
@@ -110,34 +115,3 @@ Route::get('admin/auth/logout', [
     'as'    => 'admin.auth.logout'
 ]);
 
-
-
-
-
-
-/*
-Route::get('/articles/{nombre?}', function ($nombre = "No coloco nombre") {
-    echo "El nombre que has colocado es: " . $nombre;
-});
-*/
-
-/*
-Route::get('articles', [
-    'as'    =>  'articles',
-    'uses'  =>  'UserController@index'
-]);
-*/
-
-/*
-Route::group(['prefix' => 'articles'], function() {
-
-    Route::get('view/{id}',[
-        'uses'  =>  'TestController@view',
-        'as'    =>  'articlesView'
-    ]);
-
-});
-*/
-//Route::auth();
-
-//Route::get('/home', 'HomeController@index');

@@ -10,6 +10,8 @@
 
 @section('content')
 
+
+
 <?php
 if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontController@index') {
 ?>
@@ -23,6 +25,15 @@ if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontCont
 @include('front.template.partials.products')
 
 @include('front.template.partials.entradasb')
+
+<?php
+}
+?>
+<?php
+if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontController@searchCategory') {
+?>
+
+@include('front.sections.categories')
 
 <?php
 }

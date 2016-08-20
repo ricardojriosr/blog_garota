@@ -46,4 +46,5 @@ class Article extends Model
     {
         return $query->where('title','LIKE',"%$title%");
     }
+
 }
