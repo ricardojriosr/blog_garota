@@ -23,11 +23,23 @@
             @if (Auth::user())
             <ul class="nav navbar-nav">
                 <li><a href="{{ Route('admin.index') }}">Inicio</a></li>
-                <li><a href="{{ Route('admin.articles.index') }}">Articulos</a></li>
-                <li><a href="{{ Route('admin.banners.index') }}">Banners</a></li>
-                <li><a href="{{ Route('admin.categories.index') }}">Categorias</a></li>
-                <li><a href="{{ Route('admin.images.index') }}">Imagenes</a></li>
-                <li><a href="{{ Route('admin.tags.index') }}">Tags</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Datos<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ Route('admin.articles.index') }}">Articulos</a></li>
+                        <li><a href="{{ Route('admin.banners.index') }}">Banners</a></li>
+                        <li><a href="{{ Route('admin.categories.index') }}">Categorias</a></li>
+                        <li><a href="{{ Route('admin.images.index') }}">Imagenes</a></li>
+                        <li><a href="{{ Route('admin.tags.index') }}">Tags</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('admin.about.edit',1) }}">Sobre</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>
                 @if(Auth::user()->admin())
                     <li><a href="{{ Route('admin.users.index') }}">Usuarios</a></li>
                 @endif

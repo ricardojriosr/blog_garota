@@ -16,8 +16,8 @@
         @foreach($images as $image)
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-body text-center">
-                        <img src="{{ asset('images/articles/' . $image->name) }}" alt="" class="img-responsive" >
+                    <div class="panel-body text-center galeria-admin" style="height: 300px !important;">
+                        <img src="{{ asset('images/articles/' . $image->name) }}" alt="" class="img-responsive" style="width: 100% !important;" >
                     </div>
                     <div class="panel-footer">
                         {{ $image->article->title }}
@@ -25,9 +25,11 @@
                 </div>
             </div>
         @endforeach
-        <div class="text-center">
-            {{ $images->render() }}
-        </div>
+
+    </div>
+
+    <div class="text-center">
+        {{ $images->render() }}
     </div>
 
 @endsection

@@ -52,12 +52,20 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
 
     Route::group(['middleware' => 'admin'], function() {
         Route::resource('users','UserController');
-        Route::get('users/{id}/destroy', [
+        Route::get('users/destroy', [
             'uses'  => 'UserController@destroy',
             'as'    => 'admin.users.destroy'
         ]);
     });
 
+    Route::get('about/{id}',[
+        'uses'  => 'AboutController@edit',
+        'as'    => 'admin.about.edit'
+    ]);
+    Route::put('about/store/{id}',[
+        'uses'  => 'AboutController@update',
+        'as'    => 'admin.about.update'
+    ]);
 
     Route::resource('categories','CategoriesController');
     Route::get('categories/{id}/destroy', [

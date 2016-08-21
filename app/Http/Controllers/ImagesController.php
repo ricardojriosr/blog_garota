@@ -12,7 +12,7 @@ class ImagesController extends Controller
 {
     public function index(Request $request)
     {
-        $images = Image::orderBy('id','DESC')->paginate(10);
+        $images = Image::orderBy('id','DESC')->paginate(9);
         $images->each(function($images) {
             $images->article;
         });
