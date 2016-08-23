@@ -59,8 +59,8 @@
         <div class="col-sm-4">
             <ul class="list-group">
                 <li class="list-group-item listado"><a href="{{route('front.search.category', 'FASHION')}}">FASHION</a></li>
-                <li class="list-group-item listado"><a href="#">ABOUT</a></li>
-                <li class="list-group-item listado"><a href="#">CONTACT</a></li>
+                <li class="list-group-item listado"><a href="{{ route('front.about') }}">ABOUT</a></li>
+                <li class="list-group-item listado"><a href="{{ route('front.contact') }}">CONTACT</a></li>
             </ul>
         </div>
         <div class="col-sm-4">

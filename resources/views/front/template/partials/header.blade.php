@@ -39,8 +39,8 @@
                 <li><a href="{{route('front.search.category', 'INSPIRATION')}}" class="HeaderLink">INSPIRATION</a></li>
                 <li><a href="{{route('front.search.category', 'LIFESTYLE')}}" class="HeaderLink">LIFESTYLE</a></li>
                 <li><a href="{{route('front.search.category', 'FASHION')}}" class="HeaderLink">FASHION</a></li>
-                <li><a href="#" class="HeaderLink">ABOUT</a></li>
-                <li><a href="#" class="HeaderLink">CONTACT</a></li>
+                <li><a href="{{ route('front.about') }}" class="HeaderLink">ABOUT</a></li>
+                <li><a href="{{ route('front.contact') }}" class="HeaderLink">CONTACT</a></li>
             </ul>
 
             <div class="col-sm-3 col-md-3 pull-right">

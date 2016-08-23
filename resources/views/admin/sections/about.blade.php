@@ -8,7 +8,7 @@
 ?>
 @extends('admin.template.main')
 
-@section('title','Section About')
+@section('title','Sobre / About')
 
 @section('content')
 
@@ -63,7 +63,6 @@
     <script>
         $(".select-tag").chosen({
             placeholder_text_multiple: 'Seleccione los articulos favoritos',
-            max_selected_options: 3,
             search_contains: true,
             no_results_text: 'No se encontraron resultados'
         });

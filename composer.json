@@ -12,7 +12,8 @@
         "easy-slug/easy-slug": "2.0.*",
         "laracasts/flash": "^2.0",
         "nesbot/carbon": "^1.21",
-        "jeroen-g/laravel-photo-gallery": "1.*"
+        "jeroen-g/laravel-photo-gallery": "1.*",
+        "graham-campbell/contact": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

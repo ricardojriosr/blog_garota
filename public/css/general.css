@@ -562,3 +562,78 @@ ul.pagination span {
 }
 /* Fin de Busqueda */
 
+/* About */
+
+.producto-destacado2 {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    margin-top: -14px !important;
+    font-size: large;
+    font-style: italic;
+}
+.about-page h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.about-page .intro {
+    color: gray;
+    font-size: small;
+}
+.about-page .quote {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.about-page .essay {
+    color: black;
+    font-size: small;
+}
+.about-page .about-button {
+    margin-top: 20% !important;
+}
+/* Fin About */
+
+/* Contact */
+
+.fondo-contacto {
+    width: 100%;
+    height: auto;
+    margin-top: -40px;
+    position: relative;
+}
+.img-contact {
+    width: 100%;
+    height: auto;
+}
+.form-contact {
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    top: 25%; left: 0; bottom: 25%; right: 0;
+    margin: auto;
+}
+.form-contact-1 {
+    width: 450px;
+    margin: 0 auto 0 auto;
+}
+.contact-form {
+    background-color: black;
+    color: white;
+}
+.contact-submit {
+    background-color: white;
+    border: 2px solid black;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-weight: bold;
+}
+/* Fin Contact */

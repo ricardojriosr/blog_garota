@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
+use App\Favorites;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Article;
@@ -10,6 +12,8 @@ use Carbon\Carbon;
 use App\Category;
 use App\Tag;
 use App\Banner;
+use App\Http\Requests\ContactRequest;
+use Laracasts\Flash\Flash;
 
 class FrontController extends Controller
 {
@@ -156,5 +160,40 @@ class FrontController extends Controller
             ->with('gallery',$gallery)
             ->with('super', $supergallery)
             ->with('article',$article);
+    }
+
+    public function about()
+    {
+        $about = About::find(1);
+        $favorites = Favorites::all();
+        $favorites->each(function($favorites) {
+            $favorites->article;
+            $favorites->article->images;
+        });
+        return view('front.sections.about')
+            ->with('about',$about)
+            ->with('favorites',$favorites);
+    }
+
+    public function contact()
+    {
+        return view('front.sections.contact');
+    }
+
+    public function send_contact(ContactRequest $request)
+    {
+        \Mail::send('emails.contact',
+            array(
+                'name'          => $request->name,
+                'email'         => $request->email,
+                'user_message'  => $request->message,
+                'subject'       => $request->subject
+            ), function($message)
+            {
+                $message->from('ricardojriosr@gmail.com');
+                $message->to('ricardojriosr@gmail.com', 'Admin')->subject('Mail from our website');
+            });
+        Flash::success('We Received your email, thanks for contacting us!' );
+        return \Redirect::route('front.contact');
     }
 }

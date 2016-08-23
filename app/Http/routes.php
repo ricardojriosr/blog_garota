@@ -20,23 +20,30 @@ Route::get('/',[
     'as'    => 'front.index',
     'uses'  => 'FrontController@index'
 ]);
-
-
+Route::get('about',[
+    'uses'  => 'FrontController@about',
+    'as'    => 'front.about'
+]);
+Route::get('contact',[
+    'uses'  => 'FrontController@contact',
+    'as'    => 'front.contact'
+]);
+Route::post('send-contact',[
+    'uses'  => 'FrontController@send_contact',
+    'as'    => 'front.send-contact'
+]);
 Route::get('categories/{name}',[
     'uses'  => 'FrontController@searchCategory',
     'as'    => 'front.search.category'
 ]);
-
 Route::get('tags/{name}',[
     'uses'  => 'FrontController@searchTag',
     'as'    => 'front.search.tag'
 ]);
-
 Route::get('articles/{name}',[
     'uses'  => 'FrontController@searchArticles',
     'as'    => 'articles.search'
 ]);
-
 Route::get('articles/{slug}',[
     'uses'  => 'FrontController@ViewArticle',
     'as'    => 'front.view.article'
