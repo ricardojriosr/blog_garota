@@ -19,7 +19,7 @@
         }
     }
 </style>
-<div class="masthead">
+<div class="masthead hidden-sm">
     <img src="{{ asset('images/layout/header.JPG') }}" class="img-responsive logo-header-img"/>
 </div>
 <div class="navbar navbar-inverse text-center sin-bordes" role="navigation">
@@ -33,7 +33,8 @@
             </button>
 
         </div>
-        <div class="collapse navbar-collapse text-center">
+        <div class="collapse navbar-collapse text-center
+">
             <ul class="nav navbar-nav text-center">
                 <li><a href="{{ Route('front.index') }}" class="HeaderLink">HOME</a></li>
                 <li><a href="{{route('front.search.category', 'INSPIRATION')}}" class="HeaderLink">INSPIRATION</a></li>
@@ -60,6 +61,9 @@
 
     </div>
 </div>
+
+
+
 @section('js')
 
     <script type="text/javascript">

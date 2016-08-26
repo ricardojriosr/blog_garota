@@ -55,7 +55,7 @@ if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontCont
         $(function () {
             var elem = 0;
             $('#carousel-example').bind('slide.bs.carousel', function (e) {
-                var cantidad = $(".mini-banner").length;
+                var cantidad = $(".desktop-mini-banner").length;
 
                 for (i =0; i < cantidad; i++) {
                     $("#banner_" + i).removeClass("mini-banner-activo");

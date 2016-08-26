@@ -1,5 +1,6 @@
 body,html {
     overflow-x: hidden;
+    font-family:Garamond, Georgia, serif;
 }
 .tests {
     border: 1px solid red;
@@ -163,8 +164,6 @@ p.banner {
 }
 .img-parallax {
     width: 100% !important;
-    height: 300px !important;
-
 }
 .info-parallax {
     height: 120px;
@@ -279,10 +278,21 @@ have a fixed width and height (but it's not required).
 .jcarousel li {
     /* Required only for block elements like <li>'s */
     float: left;
+    height: 250px ;
+    min-height: 250px ;
+    max-height: 250px ;
+    width: 200px;
+}
+.jcarousel-movil li {
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+    width: 300px !important;
+}
+.jcarousel-movil li img {
     height: 250px !important;
     min-height: 250px !important;
     max-height: 250px !important;
-    width: 200px;
 }
 .jcarousel li div {
     width: 100%;
@@ -319,6 +329,10 @@ have a fixed width and height (but it's not required).
     height: 250px;
     width: auto;
 }
+.img-entradab-movil {
+    height: auto !important;
+    width: auto !important;
+}
 .margen-cero {
     margin-top: 0 !important;
 }
@@ -331,6 +345,7 @@ have a fixed width and height (but it's not required).
     border-top: 3px solid black;
     text-align: center;
 }
+
 .footer-title {
     background-color: white;
     width: 40%;
@@ -505,13 +520,20 @@ ul.pagination span {
 /* Fin Paginacion */
 
 /* Busqueda */
+.sin-padding {
+    padding: 0 !important;
+}
 .search-container {
     background-color: lightgray;
-    height: 340px;
-    margin-bottom: 20px !important;
-    position: relative;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border: 2px solid white;
+    height: 400px;
 }
 .search-container img {
+    height: 250px !important;
     width: 100%;
 }
 .search-container .subtitle {
@@ -535,11 +557,7 @@ ul.pagination span {
     margin-top: 5% !important;
 }
 .search-container p.posicion-abajo {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    padding-bottom: 5px;
 }
 .search-container h3 {
     font-weight: bold;
@@ -594,6 +612,20 @@ ul.pagination span {
     color: black;
     font-size: small;
 }
+.about-carousel li img {
+    max-height: 250px !important;
+}
+.about-carousel li {
+    width: 400px !important;
+    height: 500px !important;
+    color: black !important;
+}
+.about-carousel li a {
+    color: black !important;
+}
+.about-jcarousel {
+    height: 500px !important;
+}
 .about-page .about-button {
     margin-top: 20% !important;
 }
@@ -616,7 +648,7 @@ ul.pagination span {
     background-color: white;
     width: 500px;
     height: auto;
-    top: 25%; left: 0; bottom: 25%; right: 0;
+    top: 15%; left: 0; bottom: 15%; right: 0;
     margin: auto;
 }
 .form-contact-1 {
@@ -626,6 +658,17 @@ ul.pagination span {
 .contact-form {
     background-color: black;
     color: white;
+}
+.title {
+
+}
+.hr2 {
+    border: 1px solid black;
+    margin-top: 35% !important;
+    font-weight: bold;
+}
+.hr1 {
+
 }
 .contact-submit {
     background-color: white;
@@ -637,3 +680,20 @@ ul.pagination span {
     font-weight: bold;
 }
 /* Fin Contact */
+
+/* Mobile */
+
+.footer-mobile-div {
+    text-align: center !important;
+    padding-top: 0 !important;
+    border-bottom: 2px solid white !important;
+}
+.copy-right-span-mobile {
+    color: white !important;
+}
+.copy-right-mobile {
+    text-align: center !important;
+    margin-top: 1%;
+    padding-bottom: 0 !important;
+}
+/* End Mobile */

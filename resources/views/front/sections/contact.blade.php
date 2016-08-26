@@ -15,9 +15,9 @@
         <img id="image" src="{{ asset('images/contact/fondo.jpg') }}" alt="Contact Image" class="img-responsive img-contact"/>
 
         <div class="form-contact">
-            <div class="col-sm-3"><hr></div>
-            <div class="title text-center col-sm-6"><h3>KEEP IN TOUCH!</h3></div>
-            <div class="col-sm-3"><hr></div>
+            <div class="col-sm-3 hr1 "><hr class="hr2 "></div>
+            <div class="title text-center col-sm-6 "><h3>KEEP IN TOUCH!</h3></div>
+            <div class="col-sm-3 hr1 "><hr class="hr2 "></div>
             <div class="row form-contact-1">
                 {!! Form::open(['route' => 'front.send-contact', 'method' => 'POST']) !!}
                 <div class="form-group text-center">

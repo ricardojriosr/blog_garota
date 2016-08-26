@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <title>@yield('title', 'BLOG') | Carolina Silva</title>
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/journal/bootstrap.css') }}" >
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/journal/bootstrap.min.css') }}" >
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="{{ asset('css/general.css') }}" >
     <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}" >
@@ -42,7 +42,7 @@
             src="https://code.jquery.com/jquery-2.2.4.js"
             integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
             crossorigin="anonymous"></script>
-    <script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('plugins/jcarousel/jquery.jcarousel.min.js') }}"></script>
     <script src="{{ asset('plugins/instafeed/instafeed.min.js') }}"></script>
     <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>

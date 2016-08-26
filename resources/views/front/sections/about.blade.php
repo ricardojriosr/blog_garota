@@ -20,7 +20,9 @@ exit();*/
 @section('content')
 
     <br><br>
-    <div class="row about-page">
+
+    <div class="hidden-sm">
+        <div class="row about-page">
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
             <h2>{{ $about->title }}</h2>
@@ -98,6 +100,90 @@ exit();*/
         </div>
         <div class="col-sm-2"></div>
     </div>
+    </div>
+
+    <div class="hidden-md hidden-lg">
+        <div class="row about-page">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <h2>{{ $about->title }}</h2>
+                <br>
+                <p class="intro">{{ $about->intro }}</p>
+                <br>
+                <center>
+                <img src="{{ asset('images/about/' . $about->image) }}" alt="About Image Carolina Silva" class="img-responsive">
+                </center>
+                <br>
+                <p class="quote">&#34;{{ $about->quote }}&#34;</p>
+                <br>
+                <p class="essay">{{ $about->essay }}</p>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3  about-button">
+                        <a href="#" class="jcarousel-control-prev ">
+                            <img src="{{ asset('images/Back-Vector-256.png') }}" alt="Back" class="img-responsive boton-carrusel c_prev ">
+                        </a>
+                    </div>
+
+                    <div class="jcarousel-wrapper col-sm-6 bordes-productos text-center about-jcarousel">
+                        <div class="producto-destacado2"><strong>+ ABOUT ME</strong></div>
+                        <br>
+                        <!-- Carousel -->
+                        <div class="jcarousel about-carousel">
+                            <ul>
+                                @foreach($favorites as $favx)
+
+                                    {{ $producto = $favx->article }}
+                                    <li>
+                                        <div class="col-sm-3 text-leftne">
+                                            @foreach($favx->article->images as $image)
+
+                                                @if ($image->default == 1)
+                                                    <a href="{{ route('front.view.article',$producto->slug)  }}">
+                                                        <img src="{{ asset('images/articles/' . $image->name  ) }}" alt="" class="img-responsive img-producto img-about">
+                                                    </a>
+                                                @endif
+                                            @endforeach
+                                            <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto1"><h5>{{ $producto->title }}</h5></a>
+                                            <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2"><h6>
+                                                    <?php
+                                                    $conf = 75;
+                                                    $string = $producto->subtitle;
+                                                    $largo = strlen($string);
+                                                    if ($largo > $conf)
+                                                    {
+                                                        echo substr($string,0,$conf).'...';
+                                                    }
+                                                    else
+                                                    {
+                                                        echo $string;
+                                                    }
+                                                    ?>
+                                                </h6></a>
+                                        </div>
+                                    </li>
+
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        <!-- Prev/next controls -->
+
+
+                    </div>
+
+                    <div class="col-sm-3  about-button" >
+                        <a href="#" class="jcarousel-control-next   ">
+                            <img src="{{ asset('images/Forward-Vector-256.png') }}" alt="" class="img-responsive boton-carrusel c_next ">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
     <br><br><br>
 
 @endsection

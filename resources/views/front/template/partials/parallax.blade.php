@@ -11,7 +11,7 @@
     @foreach($parallax as $px)
         @foreach($px->images as $img)
             @if ($img->default == 1)
-                <a href="{{ route('front.view.article',$px->slug) }}"><img src="{{ asset('images/articles/' . $img->name) }}" alt="{{ $px->title }}" class="img-responsive img-parallax"></a>
+                <a href="{{ route('front.view.article',$px->slug) }}"><img src="{{ asset('images/articles/' . $img->name) }}" alt="{{ $px->title }}" class="img-responsive"></a>
             @endif
         @endforeach
     <div class="h2_parallax">
