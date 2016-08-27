@@ -12,7 +12,7 @@
 
 @section('content')
 
-   <div class="hidden-sm">
+   <div class="hidden-xs">
         <div class="row primer-div-articulo">
            <div class="col-sm-2"></div>
            <div class="col-sm-8 primera-parte">
@@ -90,41 +90,43 @@
         </div>
    </div>
 
-   <div class="hidden-md hidden-lg">
+   <div class="hidden-md hidden-lg hidden-sm">
        <div class="row primer-div-articulo">
 
-           <div class="col-sm-12 primera-parte">
-               <div class="col-sm-6">
+           <div class="col-xs-12 primera-parte">
+               <div class="col-xs-12">
                    <h5>{{ $article->category->name }}</h5>
                    <h2>{{ $article->title }}</h2>
                    <p>{{ date("d F Y", strtotime($article->created_at)) }}</p>
                    <p>{{ $article->subtitle }}</p>
                </div>
-               <div class="col-sm-6">
-                   <img src="{{ asset('images/articles/' . $default  ) }}" alt="{{ $article->title }}" class="img-responsive">
+               <div class="col-xs-12">
+                   <center>
+                        <img src="{{ asset('images/articles/' . $default  ) }}" alt="{{ $article->title }}" class="img-responsive">
+                   </center>
                </div>
            </div>
 
        </div>
        <div class="row segundo-div-articulo">
-           <div class="col-sm-1"></div>
-           <div class="col-sm-10">
+           <div class="col-xs-1"></div>
+           <div class="col-xs-10">
                {!! $article->content !!}
 
            </div>
-           <div class="col-sm-1"></div>
+           <div class="col-xs-1"></div>
        </div>
        <div class="row">
-           <div class="col-sm-1"></div>
+           <div class="col-xs-1"></div>
 
-           <div id="links" class="col-sm-12">
+           <div id="links" class="col-xs-12">
                <?php $i = 0; ?>
                @if (count($gallery) > 0)
                    @foreach($gallery as $gal)
                        <center>
-                       <a href="{{ asset('images/articles/' . $gal  ) }}" title="{{ $article->title }}-{{ $i }}" data-gallery>
-                           <img src="{{ asset('images/articles/' . $gal  ) }}" alt="{{ $article->title }}-{{ $i }}" class="img-responsive img-mobile-article">
-                       </a><br>
+                           <a href="{{ asset('images/articles/' . $gal  ) }}" title="{{ $article->title }}-{{ $i }}" data-gallery>
+                               <img src="{{ asset('images/articles/' . $gal  ) }}" alt="{{ $article->title }}-{{ $i }}" class="img-responsive img-mobile-article">
+                           </a><br>
                        </center>
                        <?php $i++; ?>
                    @endforeach
@@ -132,7 +134,7 @@
            </div>
 
 
-           <div class="col-sm-1"></div>
+           <div class="col-xs-1"></div>
        </div>
        <br><br>
        <div id="blueimp-gallery" class="blueimp-gallery">
@@ -179,7 +181,8 @@
         console.log('loading img');
         var img =   '<center><br/><img src="{{ asset('images/articles/' . $second  ) }}" alt="{{ $article->title }}-second" class="img-responsive"><br/></center>';
         $(function(){
-            $("body > div.hidden-md.hidden-lg > div.row.segundo-div-articulo > div.col-sm-10 > p:nth-child(1), body > div.hidden-sm > div.row.segundo-div-articulo > div.col-sm-6 > p:nth-child(1)").after(img);
+            $("body > div.hidden-xs > div.row.segundo-div-articulo > div.col-sm-6 > p:nth-child(1)").after(img);
+            $("body > div.hidden-md.hidden-lg.hidden-sm > div.row.segundo-div-articulo > div.col-xs-10 > p:nth-child(1)").after(img);
         });
         @endif
     </script>

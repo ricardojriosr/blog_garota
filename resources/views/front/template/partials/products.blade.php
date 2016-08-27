@@ -9,7 +9,7 @@
 
 <br><br>
 
-<div class="container hidden-sm">
+<div class="container hidden-xs">
     <div class="col-sm-2 text-right  flota-derecha">
         <a href="#" class="jcarousel-control-prev ">
             <img src="{{ asset('images/Back-Vector-256.png') }}" alt="Back" class="img-responsive boton-carrusel c_prev ">
@@ -19,7 +19,7 @@
     <div class="jcarousel-wrapper col-sm-8 bordes-productos text-center">
         <div class="producto-destacado"><strong>FEATURED <br> PRODUCTS</strong></div>
         <!-- Carousel -->
-        <div class="jcarousel">
+        <div class="jcarousel inicio-productos">
             <ul>
                 @foreach($productos as $producto)
                     <li>
@@ -67,21 +67,21 @@
 
 
 
-<div class="container hidden-md hidden-lg">
-    <div class="col-sm-1 text-right  flota-derecha">
+<div class="row hidden-md hidden-lg hidden-sm ">
+    <div class="col-xs-3 text-right flota-derecha ">
         <a href="#" class="jcarousel-control-prev ">
             <img src="{{ asset('images/Back-Vector-256.png') }}" alt="Back" class="img-responsive boton-carrusel c_prev ">
         </a>
     </div>
 
-    <div class="jcarousel-wrapper col-sm-10 bordes-productos text-center">
-        <div class="producto-destacado"><strong>FEATURED <br> PRODUCTS</strong></div>
+    <div class="jcarousel-wrapper col-xs-6 bordes-productos text-center ">
+        <div class="producto-destacado-mobile"><strong>FEATURED<br>PRODUCTS</strong></div>
         <!-- Carousel -->
         <div class="jcarousel jcarousel-movil">
             <ul>
                 @foreach($productos as $producto)
                     <li>
-                        <div class="col-sm-3 text-leftne">
+                        <div class="col-xs-3 text-left sin-padding">
                             @foreach($producto->images as $image)
                                 @if ($image->default == 1)
                                     <a href="{{ route('front.view.article',$producto->slug)  }}">
@@ -116,8 +116,8 @@
 
     </div>
 
-    <div class="col-sm-1 text-left flota-izquierda" >
-        <a href="#" class="jcarousel-control-next  ">
+    <div class="col-xs-3 text-left flota-izquierda " >
+        <a href="#" class="jcarousel-control-next">
             <img src="{{ asset('images/Forward-Vector-256.png') }}" alt="" class="img-responsive boton-carrusel c_next ">
         </a>
     </div>

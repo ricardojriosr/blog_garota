@@ -10,7 +10,7 @@
 
 @section('content')
 
-<div class="hidden-sm">
+<div class="hidden-xs">
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
@@ -38,15 +38,13 @@
         </div>
         <div class="col-sm-2"></div>
     </div>
+
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-            <?php $i = 0; ?>
-
             @foreach($articles as $article)
-                    <?php if (($i%3== 0) || ($i == 0)) { echo "<div class='row '>"; } ?>
-            <div class="col-sm-4  sin-padding">
-                <div class="search-container text-center ">
+            <div class="col-sm-4">
+                <div class="search-container text-center">
                 @foreach($article->images as $img)
                     @if($img->default == 1)
                         <img src="{{ asset('images/articles/' . $img->name  ) }}" alt="{{ $article->slug }}-Default" class="img-responsive">
@@ -57,7 +55,7 @@
                     <h3>{{ $article->title }}</h3>
                     <p class="text-left subtitle">
                         <?php
-                        $conf = 40;
+                        $conf = 130;
                         $string = $article->subtitle;
                         $largo = strlen($string);
                         if ($largo > $conf)
@@ -71,16 +69,13 @@
                         ?>
                     </p>
                     <p class="posicion-abajo">
-                        <span class="read-more ">
+                        <span class="read-more">
                           <a href="{{ route('front.view.article',$article->slug) }}">Read More</a>
                         </span>
                     </p>
 
                 </div>
             </div>
-
-             <?php $i++; ?>
-                        <?php if ($i%3== 0) { echo "</div>"; } ?>
              @endforeach
         </div>
         <div class="col-sm-2"></div>
@@ -88,44 +83,44 @@
 
 </div>
 
-<div class="hidden-md hidden-lg">
-    <div class="row">
 
-        <div class="row">
-            <div class="col-sm-5 ">
+<div class="hidden-sm hidden-md hidden-lg">
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <div class="col-xs-3 ">
                 <hr class="hr-title"/>
             </div>
-            <div class="col-sm-2 text-center search-title ">
+            <div class="col-xs-6 text-center search-title-mobile">
                 <h3>SEARCH</h3>
             </div>
-            <div class="col-sm-5 ">
+            <div class="col-xs-3 ">
                 <hr class="hr-title"/>
             </div>
         </div>
-
+        <div class="col-xs-2"></div>
     </div>
 
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 text-center">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8 text-center">
             <br><br>
             @foreach($words as $word)
                 <span class="palabras">{{ $word }}</span>
             @endforeach
             <br><br>
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-xs-2"></div>
     </div>
     <div class="row">
-
-        <div class="col-sm-12">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
             @foreach($articles as $article)
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10">
-                    <div class="search-container text-center">
+                <div class="col-xs-12 sin-padding">
+                    <div class="search-container text-center search-container-mobile">
                         @foreach($article->images as $img)
                             @if($img->default == 1)
-                                <img src="{{ asset('images/articles/' . $img->name  ) }}" alt="{{ $article->slug }}-Default" class="img-responsive">
+                                <img src="{{ asset('images/articles/' . $img->name  ) }}" alt="{{ $article->slug }}-Default" class="img-responsive img-search">
                             @endif
                         @endforeach
 
@@ -154,12 +149,10 @@
 
                     </div>
                 </div>
-                <div class="col-sm-1"></div>
             @endforeach
         </div>
-
+        <div class="col-xs-2"></div>
     </div>
 </div>
-
 
 @endsection

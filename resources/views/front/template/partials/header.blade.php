@@ -6,24 +6,13 @@
  * Time: 10:40 PM
  */
 ?>
-<style>
-    @media (min-width: 768px) {
-        .navbar .navbar-nav {
-            display: inline-block;
-            float: none;
-            vertical-align: top;
-        }
 
-        .navbar .navbar-collapse {
-            text-align: center;
-        }
-    }
-</style>
-<div class="masthead hidden-sm">
+
+<div class="masthead hidden-xs">
     <img src="{{ asset('images/layout/header.JPG') }}" class="img-responsive logo-header-img"/>
 </div>
 <div class="navbar navbar-inverse text-center sin-bordes" role="navigation">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
         <div class="navbar-header text-center">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -46,12 +35,12 @@
 
             <div class="col-sm-3 col-md-3 pull-right">
                 {!! Form::open(['route' => 'front.index', 'method' => 'GET', 'class' => 'navbar-form','role' => 'search']) !!}
-                    <div class="input-group">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit" id="SearchInput"><i class="glyphicon glyphicon-search" id="SearchIcon"></i></button>
-                        </div>
-                        <input type="text" class="form-control" placeholder="SEARCH" name="srch_term" id="srch_term">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="SearchInput"><i class="glyphicon glyphicon-search" id="SearchIcon"></i></button>
                     </div>
+                    <input type="text" class="form-control" placeholder="SEARCH" name="srch_term" id="srch_term">
+                </div>
                 {!! Form::close() !!}
             </div>
 
@@ -61,7 +50,6 @@
 
     </div>
 </div>
-
 
 
 @section('js')

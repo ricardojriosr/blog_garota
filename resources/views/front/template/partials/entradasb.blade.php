@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="container hidden-sm">
+<div class="container hidden-xs">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         @foreach($entradaB as $eb)
@@ -31,7 +31,7 @@
 
 </div>
 
-<div class="container hidden-lg hidden-md">
+<div class="container hidden-lg hidden-md hidden-sm">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
         <?php $i = 0; ?>
