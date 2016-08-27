@@ -284,6 +284,7 @@ p.banner-mobile {
     color: black !important;
     font-style: italic !important;
     font-size: 40px !important;
+    text-transform: uppercase !important;
 }
 .h2_parallax_mobile {
     position: absolute;
@@ -308,6 +309,7 @@ p.banner-mobile {
     font-style: italic !important;
     font-size: 14px !important;
     margin-top: 0 !important;
+    text-transform: uppercase !important;
 }
 .producto1,
 .producto1:hover {
@@ -787,7 +789,9 @@ ul.pagination span {
     margin-top: 1px !important;
 }
 .form-contact-mobile .form-contact-1 input,
-.form-contact-mobile .form-contact-1 textarea {
+.form-contact-mobile .form-contact-1 textarea,
+.form-contact .form-contact-1 input,
+.form-contact .form-contact-1 textarea {
     color: white !important;
     background-color: black !important;
     font-size: small;
@@ -818,7 +822,7 @@ ul.pagination span {
     background-color: white;
     width: 500px;
     height: auto;
-    top: 23%; left: 0; bottom: 23%; right: 0;
+    top: 15%; left: 0; bottom: 15%; right: 0;
     margin: auto;
 }
 .form-contact-mobile {
@@ -876,5 +880,7 @@ ul.pagination span {
     text-align: center !important;
     margin-top: 1%;
     padding-bottom: 0 !important;
+    background-color: black;
+    font-family:Garamond, Georgia, serif !important;
 }
 /* End Mobile */
