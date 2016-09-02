@@ -90,7 +90,7 @@
 <div class="row final-footer hidden-xs footer-font">
     <div class="col-sm-1"></div>
     <div class="col-sm-4 logo-footer">
-        Carolina Silva
+        <img src="{{ asset('images/layout/header-mobile.png') }}" alt="Carolina Silva" class="img-responsive hidden-xs">
     </div>
     <div class="col-sm-4 menus-footer">
         <div class="col-sm-4">
@@ -119,7 +119,9 @@
 <div class="container final-footer hidden-lg hidden-md hidden-sm text-center footer-font">
     <div class="row">
         <div class="col-xs-2"></div>
-        <div class="col-xs-8 footer-mobile-div logo-footer text-center"><span class="footer-mobile-title">Carolina Silva</span></div>
+        <div class="col-xs-8 footer-mobile-div logo-footer text-center">
+            <img src="{{ asset('images/layout/header-mobile.png') }}" alt="Carolina Silva" class="img-responsive hidden-sm hidden-md hidden-lg">
+        </div>
         <div class="col-xs-2"></div>
     </div>
     <div class="row subitems-mobile">

@@ -92,11 +92,11 @@
     <div class="col-sm-2"></div>
 </div>
 
-<div class="row text-center hidden-sm hidden-md hidden-lg ">
+<div class="container text-center hidden-sm hidden-md hidden-lg ">
 
     <?php $k = 0; ?>
     @foreach($banners as $banner)
-        <div id="banner_mobile_<?php echo $k; ?>" class="col-sm-3 text-center mobile-mini-banner mini-banner  mini-banner-activo">
+        <div id="banner_mobile_<?php echo $k; ?>" class="col-xs-3 text-center mobile-mini-banner mini-banner  mini-banner-activo">
 
             <center>
                 @foreach($banner->article->images as $image)

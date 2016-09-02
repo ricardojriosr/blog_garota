@@ -10,18 +10,24 @@
 
 <div class="masthead hidden-xs">
     <img src="{{ asset('images/layout/header.JPG') }}" class="img-responsive logo-header-img"/>
+    <img src="{{ asset('images/layout/header1.png') }}" class="img-responsive img-header-desktop"/>
 </div>
 <div class="navbar navbar-inverse text-center sin-bordes" role="navigation">
     <div class="container-fluid text-center">
+
         <div class="navbar-header text-center">
+
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
+            <a class="navbar-brand" href="{{route('front.index')}}">
+                <img src="{{ asset('images/layout/header-mobile.png') }}" alt="Carolina Silva" class="img-responsive hidden-sm hidden-md hidden-lg img-header-logo">
+            </a>
         </div>
+
         <div class="collapse navbar-collapse text-center
 ">
             <ul class="nav navbar-nav text-center">
