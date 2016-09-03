@@ -28,12 +28,12 @@
         <div class="item active">
             <a href="{{ route('front.view.article',$banner->article->slug)  }}"><img src="{{ asset('images/banner/' . $banner->imagen) }}" class="img-responsive img-banner" /></a>
             <div class="carousel-caption">
-                <h4 class="banner hidden-xs">{{$banner->article->category->name}}</h4>
-                <h3 class="banner hidden-xs">{{$banner->article->title}}</h3>
+                <h4 class="banner hidden-xs OpenSansSemiBold300">{{$banner->article->category->name}}</h4>
+                <h3 class="banner hidden-xs PtSerifItalic">{{$banner->article->title}}</h3>
                 <p class="banner hidden-xs">{{$banner->article->subtitle}}</p>
-                <h4 class="banner-mobile hidden-sm hidden-md hidden-lg">{{$banner->article->category->name}}</h4>
-                <h3 class="banner-mobile hidden-sm hidden-md hidden-lg">{{$banner->article->title}}</h3>
-                <p class="banner-mobile hidden-sm hidden-md hidden-lg">{{$banner->article->subtitle}}</p>
+                <h4 class="banner-mobile hidden-sm hidden-md hidden-lg OpenSansSemiBold300">{{$banner->article->category->name}}</h4>
+                <h3 class="banner-mobile hidden-sm hidden-md hidden-lg PtSerifItalic">{{$banner->article->title}}</h3>
+                <p class="banner-mobile hidden-sm hidden-md hidden-lg OpenSansRegular">{{$banner->article->subtitle}}</p>
             </div>
         </div>
         <?php
@@ -42,12 +42,12 @@
         <div class="item">
             <a href="{{ route('front.view.article',$banner->article->slug)  }}"><img src="{{ asset('images/banner/' . $banner->imagen) }}" class="img-responsive img-banner" /></a>
             <div class="carousel-caption">
-                <h4 class="banner hidden-xs">{{$banner->article->category->name}}</h4>
-                <h3 class="banner hidden-xs">{{$banner->article->title}}</h3>
+                <h4 class="banner hidden-xs OpenSansSemiBold300">{{$banner->article->category->name}}</h4>
+                <h3 class="banner hidden-xs PtSerifItalic">{{$banner->article->title}}</h3>
                 <p class="banner hidden-xs">{{$banner->article->subtitle}}</p>
-                <h4 class="banner-mobile hidden-sm hidden-md hidden-lg">{{$banner->article->category->name}}</h4>
-                <h3 class="banner-mobile hidden-sm hidden-md hidden-lg">{{$banner->article->title}}</h3>
-                <p class="banner-mobile hidden-sm hidden-md hidden-lg">{{$banner->article->subtitle}}</p>
+                <h4 class="banner-mobile hidden-sm hidden-md hidden-lg OpenSansSemiBold300">{{$banner->article->category->name}}</h4>
+                <h3 class="banner-mobile hidden-sm hidden-md hidden-lg PtSerifItalic">{{$banner->article->title}}</h3>
+                <p class="banner-mobile hidden-sm hidden-md hidden-lg OpenSansRegular">{{$banner->article->subtitle}}</p>
             </div>
         </div>
         <?php
@@ -78,10 +78,10 @@
                     <img src="{{ asset('images/banner/' . $banner->imagen) }}" alt="{{$banner->article->title}}" class="img-responsive img-mini-banner">
                 </a>
                     <a href="{{route('front.search.category', $banner->article->category->name)}}">
-                        <h5 class="text-left cat-mini-banner">{{$banner->article->category->name}}</h5>
+                        <h5 class="text-left cat-mini-banner OpenSansExtraBold">{{$banner->article->category->name}}</h5>
                     </a>
                     <a href="{{ route('front.view.article',$banner->article->slug)  }}">
-                        <h3 class="text-left tit-mini-banner">{{$banner->article->title}}</h3>
+                        <h3 class="text-left tit-mini-banner PtSerifItalic">{{$banner->article->title}}</h3>
                     </a>
             @endif
         </center>
@@ -105,10 +105,10 @@
                             <img src="{{ asset('images/banner/' . $banner->imagen) }}" alt="{{$banner->article->title}}" class="img-responsive img-mini-banner-mobile ">
                         </a>
                         <a href="{{route('front.search.category', $banner->article->category->name)}}">
-                            <h5 class="text-left cat-mini-banner">{{$banner->article->category->name}}</h5>
+                            <h5 class="text-left cat-mini-banner OpenSansExtraBold">{{$banner->article->category->name}}</h5>
                         </a>
                         <a href="{{ route('front.view.article',$banner->article->slug)  }}">
-                            <h3 class="text-left tit-mini-banner">{{$banner->article->title}}</h3>
+                            <h3 class="text-left tit-mini-banner PtSerifItalic">{{$banner->article->title}}</h3>
                         </a>
                     @endif
             </center>

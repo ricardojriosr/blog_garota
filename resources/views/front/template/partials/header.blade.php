@@ -12,7 +12,7 @@
     <img src="{{ asset('images/layout/header.JPG') }}" class="img-responsive logo-header-img"/>
     <img src="{{ asset('images/layout/header1.png') }}" class="img-responsive img-header-desktop"/>
 </div>
-<div class="navbar navbar-inverse text-center sin-bordes" role="navigation">
+<div class="navbar navbar-inverse text-center sin-bordes OpenSansExtraBold" role="navigation">
     <div class="container-fluid text-center">
 
         <div class="navbar-header text-center">

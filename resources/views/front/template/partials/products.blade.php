@@ -31,8 +31,8 @@
                                 </a>
                             @endif
                         @endforeach
-                        <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto1"><h5>{{ $producto->title }}</h5></a>
-                        <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2"><h6>
+                        <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto1 OpenSansExtraBold"><h5>{{ $producto->title }}</h5></a>
+                        <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2 OpenSansLight"><h6>
                                 <?php
                                 $conf = 75;
                                 $string = $producto->subtitle;
@@ -89,8 +89,8 @@
                                     </a>
                                 @endif
                             @endforeach
-                            <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto1"><h5>{{ $producto->title }}</h5></a>
-                            <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2"><h6>
+                            <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto1 OpenSansExtraBold"><h5>{{ $producto->title }}</h5></a>
+                            <a href="{{ route('front.view.article',$producto->slug)  }}" class="producto2 OpenSansLight"><h6>
                                     <?php
                                     $conf = 75;
                                     $string = $producto->subtitle;

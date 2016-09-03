@@ -21,9 +21,9 @@
                                 <a href="{{ route('front.view.article',$a1->slug)  }}"><img src="{{ asset('images/articles/' . $image->name  ) }}" alt="{{$a1->title}}" class="img-responsive img-entradaA"></a>
                             @endif
                             <br>
-                            <a href="{{route('front.search.category', $a1->category->name)}}"><h5 class="text-left h5entradaa">{{$a1->category->name}}</h5></a>
-                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2">{{$a1->title}}</h3></a>
-                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="pentradaa"><p class="text-left pentradaa2">{{$a1->subtitle}}</p></a>
+                            <a href="{{route('front.search.category', $a1->category->name)}}"><h5 class="text-left h5entradaa OpenSansExtraBold">{{$a1->category->name}}</h5></a>
+                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2 PtSerifItalic">{{$a1->title}}</h3></a>
+                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="pentradaa"><p class="text-left pentradaa2 OpenSansLight">{{$a1->subtitle}}</p></a>
                         @endforeach
                     </div>
                 @endforeach
@@ -48,9 +48,9 @@
                                 <a href="{{ route('front.view.article',$a1->slug)  }}"><img src="{{ asset('images/articles/' . $image->name  ) }}" alt="{{$a1->title}}" class="img-responsive img-entradaA"></a>
                             @endif
                             <br>
-                            <a href="{{route('front.search.category', $a1->category->name)}}"><h5 class="text-left h5entradaa">{{$a1->category->name}}</h5></a>
-                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2">{{$a1->title}}</h3></a>
-                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="pentradaa"><p class="text-left pentradaa2">{{$a1->subtitle}}</p></a>
+                            <a href="{{route('front.search.category', $a1->category->name)}}"><h5 class="text-left h5entradaa OpenSansExtraBold">{{$a1->category->name}}</h5></a>
+                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2 PtSerifItalic">{{$a1->title}}</h3></a>
+                            <a href="{{ route('front.view.article',$a1->slug)  }}" class="pentradaa"><p class="text-left pentradaa2 OpenSansLight">{{$a1->subtitle}}</p></a>
                         @endforeach
                     </div>
                 @endforeach

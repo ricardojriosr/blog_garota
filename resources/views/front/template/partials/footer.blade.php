@@ -87,7 +87,7 @@
 <!-- LightWidget WIDGET -->
 <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8d636a01ffa1517bb3e34e0c5ea9b2b2.html" id="lightwidget_8d636a01ff" name="lightwidget_8d636a01ff"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
-<div class="row final-footer hidden-xs footer-font">
+<div class="row final-footer hidden-xs footer-font OpenSansExtraBold">
     <div class="col-sm-1"></div>
     <div class="col-sm-4 logo-footer">
         <img src="{{ asset('images/layout/header-mobile.png') }}" alt="Carolina Silva" class="img-responsive hidden-xs">
@@ -116,7 +116,7 @@
 
 
 
-<div class="container final-footer hidden-lg hidden-md hidden-sm text-center footer-font">
+<div class="container final-footer hidden-lg hidden-md hidden-sm text-center footer-font OpenSansExtraBold">
     <div class="row">
         <div class="col-xs-2"></div>
         <div class="col-xs-8 footer-mobile-div logo-footer text-center">

@@ -19,9 +19,9 @@
                     </a>
                 @endif
             @endforeach
-            <a href="{{route('front.search.category', $eb->category->name)}}"><h5 class="text-left h5entradaa margen-cero">{{$eb->category->name}}</h5></a>
-            <a href="{{ route('front.view.article',$eb->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2 margen-cero" >{{$eb->title}}</h3></a>
-            <a href="{{ route('front.view.article',$eb->slug)  }}" class="pentradaa"><p class="text-left pentradaa2 margen-cero">
+            <a href="{{route('front.search.category', $eb->category->name)}}"><h5 class="text-left h5entradaa margen-cero OpenSansSemiBold300">{{$eb->category->name}}</h5></a>
+            <a href="{{ route('front.view.article',$eb->slug)  }}" class="h3entradaa PtSerifItalic"><h3 class="text-left h3entradaa2 margen-cero" >{{$eb->title}}</h3></a>
+            <a href="{{ route('front.view.article',$eb->slug)  }}" class="pentradaa OpenSansLight"><p class="text-left pentradaa2 margen-cero">
                     <?php echo substr($eb->subtitle,0,75).'...' ?>
                 </p></a>
         </div>
@@ -45,9 +45,9 @@
                         </a>
                     @endif
                 @endforeach
-                <a href="{{route('front.search.category', $eb->category->name)}}"><h5 class="text-left h5entradaa margen-cero">{{$eb->category->name}}</h5></a>
-                <a href="{{ route('front.view.article',$eb->slug)  }}" class="h3entradaa"><h3 class="text-left h3entradaa2 margen-cero" >{{$eb->title}}</h3></a>
-                <a href="{{ route('front.view.article',$eb->slug)  }}" class="pentradaa"><p class="text-left pentradaa2 margen-cero">
+                <a href="{{route('front.search.category', $eb->category->name)}}"><h5 class="text-left h5entradaa margen-cero OpenSansSemiBold300">{{$eb->category->name}}</h5></a>
+                <a href="{{ route('front.view.article',$eb->slug)  }}" class="h3entradaa PtSerifItalic"><h3 class="text-left h3entradaa2 margen-cero" >{{$eb->title}}</h3></a>
+                <a href="{{ route('front.view.article',$eb->slug)  }}" class="pentradaa OpenSansLight"><p class="text-left pentradaa2 margen-cero">
                         <?php echo substr($eb->subtitle,0,75).'...' ?>
                     </p></a>
             </div>

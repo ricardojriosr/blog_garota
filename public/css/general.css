@@ -1,9 +1,50 @@
+@font-face {
+    font-family: OpenSansExtraBold;
+    src: url(../bootstrap/fonts/OpenSans-ExtraBold.tff);
+}
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(../bootstrap/fonts/OpenSans-Regular.tff);
+}
+@font-face {
+    font-family: OpenSansSemiBold;
+    src: url(../bootstrap/fonts/OpenSans-SemiBold.tff);
+}
+@font-face {
+    font-family: PtSerifItalic;
+    src: url(../bootstrap/fonts/PT_Serif-Web-Italic.tff);
+}
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../bootstrap/fonts/OpenSans-Light.tff);
+}
+.OpenSansExtraBold {
+    font-family: OpenSansExtraBold !important;
+}
+.OpenSansRegular {
+    font-family: OpenSansRegular !important;
+}
+.OpenSansSemiBold {
+    font-family: OpenSansSemiBold !important;
+}
+.OpenSansSemiBold300 {
+    font-family: OpenSansSemiBold !important;
+    letter-spacing: 0.3em !important;
+}
+.OpenSansLight {
+    font-family: OpenSansLight !important;
+}
+.PtSerifItalic {
+    font-family: PtSerifItalic !important;
+    font-style: italic !important;
+}
 body,html {
     overflow-x: hidden;
-    font-family:Garamond, Georgia, serif !important;
+    font-family:Garamond, Georgia, serif;
 }
 .footer-font {
-    font-family:Garamond, Georgia, serif !important;
+    font-family:Garamond, Georgia, serif;
+    font-size: smaller;
 }
 .navbar .navbar-nav {
     display: inline-block;
@@ -115,12 +156,15 @@ h4.banner {
     text-transform: uppercase;
     color: white;
     font-size: 30px;
+    font-family: OpenSansSemiBold !important;
+    letter-spacing: 0.3em;
 }
 h3.banner {
     color: black;
     font-size: 50px;
     text-transform: uppercase;
     font-style: italic;
+    font-family: PtSerifItalic !important;
 }
 p.banner {
     color: white;
@@ -128,6 +172,7 @@ p.banner {
     text-transform: uppercase;
     font-size: 15px;
     display: initial;
+    font-family: OpenSansRegular !important;
 }
 .mobile-mini-banner {
     padding: 0 !important;
@@ -138,12 +183,15 @@ h4.banner-mobile {
     text-transform: uppercase;
     color: white;
     font-size: 11px;
+    font-family: OpenSansSemiBold !important;
+    letter-spacing: 0.3em;
 }
 h3.banner-mobile {
     color: black;
     font-size: 12px;
     text-transform: uppercase;
     font-style: italic;
+    font-family: PtSerifItalic !important;
 }
 p.banner-mobile {
     color: white;
@@ -151,6 +199,7 @@ p.banner-mobile {
     text-transform: uppercase;
     font-size: 9px;
     display: initial;
+    font-family: OpenSansRegular !important;
 }
 .mini-banner {
     height: 120px !important;
@@ -868,7 +917,7 @@ ul.pagination span {
     background-color: white;
     width: 500px;
     height: auto;
-    top: 15%; left: 0; bottom: 15%; right: 0;
+    top: 13%; left: 0; bottom: 13%; right: 0;
     margin: auto;
 }
 .form-contact-mobile {
@@ -930,3 +979,8 @@ ul.pagination span {
     font-family:Garamond, Georgia, serif !important;
 }
 /* End Mobile */
+
+.carousel-indicators li {
+    width: 24% !important;
+    margin-left: 0 !important;
+}
