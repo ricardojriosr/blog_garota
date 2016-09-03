@@ -8,11 +8,12 @@
 ?>
 
 
-<div class="masthead hidden-xs">
-    <img src="{{ asset('images/layout/header.JPG') }}" class="img-responsive logo-header-img"/>
-    <img src="{{ asset('images/layout/header1.png') }}" class="img-responsive img-header-desktop"/>
-</div>
-<div class="navbar navbar-inverse text-center sin-bordes OpenSansExtraBold" role="navigation">
+
+<div class="navbar navbar-fixed-top navbar-inverse text-center sin-bordes OpenSansExtraBold" role="navigation" id="nav">
+    <div class="masthead hidden-xs">
+        <img src="{{ asset('images/layout/header.JPG') }}" class="img-responsive logo-header-img"/>
+        <img src="{{ asset('images/layout/header1.png') }}" class="img-responsive img-header-desktop"/>
+    </div>
     <div class="container-fluid text-center">
 
         <div class="navbar-header text-center">
@@ -61,6 +62,18 @@
 @section('js')
 
     <script type="text/javascript">
+
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > 10) {
+                $('.masthead').css({
+                    'display':'none'
+                });
+            }
+
+        });
+
 
         $('#srch_term').keydown(function(event) {
             if (event.keyCode == 13) {

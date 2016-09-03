@@ -16,6 +16,7 @@
     <header>
         @include('front.template.partials.header')
     </header>
+
     @include('flash::message')
     @if(count($errors) > 0)
         <div class="alert alert-danger" role="alert">
@@ -26,7 +27,11 @@
             </ul>
         </div>
     @endif
-    @yield('content')
+
+    <div class="row-fluid contenido-x contenido-y">
+        @yield('content')
+    </div>
+
 
     <footer>
         @include('front.template.partials.footer')
