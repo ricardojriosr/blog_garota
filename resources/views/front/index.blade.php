@@ -45,6 +45,9 @@ if (Route::getCurrentRoute()->getActionName() == 'App\Http\Controllers\FrontCont
 @section('js')
     <script type="text/javascript">
 
+
+
+
         $(function () {
             var feed = new Instafeed({
                 clientId: '0b32df656196458db33a437a109f7b08'

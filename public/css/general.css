@@ -40,27 +40,30 @@
 }
 body,html {
     overflow-x: hidden;
-    font-family:OpenSansLight;
+    font-family: OpenSansLight;
 }
+
+
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     .contenido-x {
-        padding-top: 250px;
+        padding-top: 180px;
     }
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     .contenido-x {
-        padding-top: 250px;
+        padding-top: 180px;
     }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     .contenido-x {
-        padding-top: 195px;
+        padding-top: 180px;
     }
 }
 
@@ -179,7 +182,7 @@ body,html {
 }
 #carousel-example {
 
-}
+ }
 .img-banner {
     height: 100% !important;
     width: 100% !important;

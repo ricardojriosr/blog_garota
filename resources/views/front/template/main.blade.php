@@ -44,5 +44,16 @@
     <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="{{ asset('plugins/image-gallery/js/bootstrap-image-gallery.min.js') }}"></script>
     @yield('js')
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($("body").height() <= ($(window).height() + $(window).scrollTop()) || $(window).scrollTop() <= 50) {
+                    $(".masthead").show();
+                }else {
+                    $(".masthead").hide();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
