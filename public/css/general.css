@@ -87,6 +87,11 @@ body,html {
     float: none;
     vertical-align: top;
 }
+
+.panel-body.text-center.galeria-admin > img {
+    height: 280px;
+}
+
 .carousel-indicators {
     width: 100% !important;
     min-width: 100% !important;

@@ -37,7 +37,6 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('admin.about.edit',1) }}">Sobre</a></li>
-                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </li>
                 @if(Auth::user()->admin())
